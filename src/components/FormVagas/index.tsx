@@ -15,7 +15,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <form className={styles.form} onSubmit={aoEnviarForm}>
+    <FormVagas onSubmit={aoEnviarForm} className={styles.form}>
       <input
         className={styles.campo}
         placeholder="Front-end, fullstack, node, design"
@@ -25,7 +25,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
       <button className={styles.btnPesquisar} type="submit">
         Pesquisar
       </button>
-    </form>
+    </FormVagas>
   )
 }
 export default FormVagas
