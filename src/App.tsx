@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 import ListaVagas from './containers/ListaVagas'
 
 import './global.css'
-import Theme from './theme/theme'
+import Theme from './theme/Theme'
 
 function App() {
   return (
