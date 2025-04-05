@@ -15,7 +15,7 @@ export const SearchBtn = styled.button`
   height: 40px;
   padding: 0 16px;
   font-size: 18px;
-  color: var(--cor-secundaria);
+  color: ${(props) => props.theme.secondary};
   margin-left: 8px;
   cursor: pointer;
 `
@@ -23,4 +23,8 @@ export const SearchBtn = styled.button`
 export const Campo = styled.input`
   padding: 0 16px;
   outline-color: ${(props) => props.theme.primary};
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
